@@ -21,7 +21,7 @@ function New-NetworkMapping {
     $mappings = @()
     foreach ($adapter in $adapters) {
         $srcNetwork = Get-HCXNetwork -Name $adapter.NetworkName -Site $SrcSite
-        # Logic to determine target network; adjust as needed for your environment
+        # Logic to determine target network; adjust as needed for your environment need to use regex  or contains as NSX-T segment names are diffrent
         $dstNetwork = Get-HCXNetwork -Name $adapter.NetworkName -Site $DstSite
         if ($srcNetwork -and $dstNetwork) {
             $mappings += New-HCXNetworkMapping -SourceNetwork $srcNetwork -DestinationNetwork $dstNetwork
