@@ -1,4 +1,4 @@
-# HCX Migration with Mobility Groups - Improved Script
+# HCX Migration with Mobility Groups - Improved Script kishor
 # Supports multiple Mobility Groups, dynamic NIC mapping, data validation, and flexible migration options from CSV
 
 param(
