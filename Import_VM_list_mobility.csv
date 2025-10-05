@@ -1,0 +1,5 @@
+MobilityGroupName,SCHEDULE,VM_NAME,DESTINATION_VM_FOLDER,DESTINATION_CLUSTER_OR_HOST,DESTINATION_DATASTORE,MIGRATION_PROFILE,DISK_TYPE,VMTOOLS,ISOS,POWER_OFF,CUSTOM_ATTRIB,RETAIN_MAC,UPGRADE_HW,REMOVE_SNAPS
+MG1,True,AppServer01,ProdFolder,ProdCluster,ProdDatastore,Bulk,Thin,True,True,True,True,True,False,True
+MG1,True,AppServer02,ProdFolder,ProdCluster,ProdDatastore,Bulk,Thin,True,True,True,True,True,False,True
+MG2,False,DBServer01,DBFolder,DBCluster,DBDatastore,Cold,Thick,False,True,False,False,False,True,True
+MG2,False,WebServer01,WebFolder,WebCluster,WebDatastore,vMotion,SameAsSource,True,False,False,True,True,False,False
